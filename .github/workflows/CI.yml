@@ -40,5 +40,9 @@ jobs:
           key: ccache-${{ env.ROS_DISTRO }}-${{ env.ROS_REPO }}
       # Run industrial_ci
       - uses: 'ros-industrial/industrial_ci@master'
+        env:
+          ROS_DISTRO: melodic
+          ROS_REPO: testing
+
 
         
